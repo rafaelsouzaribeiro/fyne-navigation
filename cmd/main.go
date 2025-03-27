@@ -20,6 +20,9 @@ func main() {
 
 	stack := container.NewStack(view1, view2)
 
+	view2.Hide()
+	view1.Show()
+
 	myWindow.SetContent(stack)
 	myWindow.Resize(fyne.NewSize(800, 480))
 	myWindow.ShowAndRun()
