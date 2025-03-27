@@ -1,4 +1,4 @@
-module MODULE_NAME
+module github.com/rafaelsouzaribeiro
 
 go 1.24.0
 

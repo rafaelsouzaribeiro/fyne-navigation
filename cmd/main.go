@@ -1,8 +1,8 @@
 package main
 
 import (
-	"MODULE_NAME/internal/component/header"
-	"MODULE_NAME/internal/component/view"
+	"github.com/rafaelsouzaribeiro/internal/component/header"
+	"github.com/rafaelsouzaribeiro/internal/component/view"
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
