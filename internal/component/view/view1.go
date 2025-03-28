@@ -11,9 +11,10 @@ import (
 )
 
 func CreateView1(title string, header *fyne.Container, myWindow fyne.Window) *fyne.Container {
+	background := canvas.NewRectangle(color.White)
 	text1 := canvas.NewText(title, color.Black)
 	button1 := button.CreateButton("Ir para View 2", myWindow, []int{1, 0})
 
 	content1 := container.New(layout.NewVBoxLayout(), text1, layout.NewSpacer(), button1)
-	return container.New(layout.NewVBoxLayout(), header, content1)
+	return container.New(layout.NewStackLayout(), background, container.New(layout.NewVBoxLayout(), header, content1))
 }
